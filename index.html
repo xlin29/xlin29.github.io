@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Xu Lin</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+        <meta name="description" content="Xu Lin - UIC">
+        <meta name="keywords" content="Xu, Lin, Xu Lin, UIC, University of Illinois Chicago, Computer Science, Computer Security, Privacy, Browser Fingerprinting, Jason Polakis">
+        <meta name="author" content="Xu Lin">
+        <meta name="google-site-verification" content="0_5oGvlb1A2GNLo1j2uZsX4bZtMfIvQknfZL3VO1CZw" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VR4WBN0ZV4"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-VR4WBN0ZV4');
+        </script>
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://bits.lab.uic.edu/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://bits.lab.uic.edu/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://bits.lab.uic.edu/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://bits.lab.uic.edu/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://bits.lab.uic.edu/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://bits.lab.uic.edu/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://bits.lab.uic.edu/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://bits.lab.uic.edu/apple-touch-icon-152x152.png">
+		<link rel="icon" type="image/png" href="https://bits.lab.uic.edu/favicon-196x196.png" sizes="196x196">
+		<link rel="icon" type="image/png" href="https://bits.lab.uic.edu/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="https://bits.lab.uic.edu/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="https://bits.lab.uic.edu/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="https://bits.lab.uic.edu/favicon-128.png" sizes="128x128">
+</head>
+<style>
+    body, html {
+        width: 100%; height: 100%; margin: 0; padding: 0; background: #be7838; overflow: scroll;
+    }
+    h2 {
+        text-align: center;
+        font-family: "Patua One" !important;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-bottom: 1px solid #cccccc;
+        font-weight: normal;
+        line-height: 1.1;
+        margin: auto;
+        padding: 25px;
+        font-size: 28px;
+        -webkit-font-smoothing: antialiased;
+    }
+    a, a:link {
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+    }
+    a, a:hover, .paper-title{
+        color: #be7838;
+    }
+    @media (min-width: 768px) {
+        .container {
+            width: 750px;
+        }
+    }
+    @media (min-width: 992px) {
+        .container {
+            width: 970px;
+        }
+    }
+    @media (min-width: 1200px) {
+        .container {
+            width: 1170px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            padding: 10px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 25% 75%;
+            /* width: 72%; */
+            height: 100%;
+        }
+        .column-left {
+            grid-column:1;
+            padding: 15px;
+            margin-top: 0px;
+        }
+        .column-right {
+            grid-column:2;
+            padding: 15px;
+
+        }
+        #profile-pic{
+            margin-right: 10px;
+        }
+    }
+    @media (max-width: 768px) {
+        .container{
+            width: 90%;
+        }
+        .column-left, #info {
+           margin: auto;
+           padding-left: 10%;
+        }
+        p, ul, li, .pdf{
+            font-size: 14px !important;
+        }
+        #photo-desc{
+            font-size: 12px !important;
+        }
+        .teaching div, .contact{
+            font-size: 12px !important;
+        }
+        h3, #email{
+            font-size: 16px !important;
+        }
+        .award{
+            font-size: 12px !important;
+        }
+    }
+    .wrapper {
+        position: relative;
+        background: white;
+        -webkit-transition: right 610ms cubic-bezier(0,0.8,0.55,1);
+        -moz-transition: right 610ms cubic-bezier(0,0.8,0.55,1);
+        -ms-transition: right 610ms cubic-bezier(0,0.8,0.55,1);
+        -o-transition: right 610ms cubic-bezier(0,0.8,0.55,1);
+        transition: right 610ms cubic-bezier(0,0.8,0.55,1);
+        height: 100%;
+        width: 100%;
+        overflow: scroll;
+    }
+    #photo-desc{
+        font-size: 14px;
+        margin-top: 0%;
+        text-align: right;
+    }
+    p, ul, li{
+        color: #666666;
+        font-family: "Open Sans", sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        text-align: justify;
+        line-height: 33px;
+        letter-spacing: 0px;
+        word-wrap: break-word;
+    }
+    img{
+        max-width: 100%;
+    }
+    .paper-graph{
+        border:1px solid #cccccc;
+        width: 80% !important;
+        display: block;
+        margin-left: 15px;
+    }
+    h3, #email{
+        color: rgb(123, 140, 137);
+        font-weight: bold;
+    }
+    .award{
+        background-color: #be7838;
+        color: #FFFFFF;
+        font-variant: small-caps;
+        font-size: 14px;
+        padding: 0px 2px;
+        border-radius: 3px;
+    }
+    #view{color:#c5baab; cursor: pointer;}
+    .paper-container{
+        padding-left: 25px;
+    }
+    .author{
+        text-decoration: underline;
+    }
+    #pdf{
+        padding-left: 5%;
+    }
+    .teaching p{
+        color: rgb(123, 140, 137);
+        margin: 0;
+    }
+    .teaching div, .contact{
+        color: #666666;
+        font-size: 14px;
+    }
+</style>
+<scipt>
+</scipt>
+<body>
+    <div class="wrapper">
+        <h2>Xu Lin</h2>
+        <div class="container">
+            <div class="column-left">
+                <img id="profile-pic" src="img/profile_pic.png">
+                <!-- <p id="photo-desc">January 1, 2022 in Chicago</p> -->
+                <p><span id="email">Email:</span> <a href="mailto:xlin48@uic.edu">xlin48@uic.edu</a></p>
+                <div class="contact">Computer Science Department<br>
+                    University of Illinois Chicago</div>
+                <br>
+                <div class="teaching">
+                <p>Teaching Assistant</p>
+                     <div class="course">CS 211: Programming Practicum</div>
+                     <div class="course">CS 141: Program Design II</div>
+                     <div class="course">CS 111: Program Design I</div>
+                </div>
+            </div>
+            <div class="columnn-right">
+                <p id="info">I am a Computer Science Ph.D. candidate advised by <a href="https://www.cs.uic.edu/~polakis/" target="_blank">Prof. Jason Polakis</a> at University of Illinois Chicago. My research interests revolve around <i>security</i> and <i>privacy</i>. My objectives are to investigate the Web's threat landscape and develop countermeasures to protect user privacy. Lately, I've been focusing on browser fingerprinting techniques and tackling pitfalls in authentication/authorisation mechanisms. I received my M.Sc. from Northeastern University and  B.Sc. from Xiamen University.</p>
+                <h3>News</h3>
+                <div id="news-section">
+                    <ul id="news-bullet">
+                        <li>(08/03/2022) Awarded from Brave for finding <a href="https://github.com/brave/brave-browser/issues/23432" target="_blank">a security bug </a> in Brave browser. <a href="https://github.com/brave/brave-browser/issues/23432" target="_blank"><span class="award">Bug Bounty</span></a></li>
+                        <li>(05/23/2022) Research internship at <a href="https://researcher.watson.ibm.com/researcher/view_group.php?id=4354" target="_blank">IBM Research</a>.</li>
+                        <li>(02/13/2022) Paper on two-factor authentication accepted by <a href="https://www.usenix.org/conference/usenixsecurity22" target="_blank">USENIX Security 2022</a>.</li>
+                        <li>(10/13/2021) Paper on browser form autofill entered the finalist of CSAW'21 Applied Research Competition.</li>
+                        <li>(05/17/2021) Awarded from Google for finding <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1182767" target="_blank">a security bug </a> in Chrome browser. <a href="https://chromereleases.googleblog.com/2021/03/stable-channel-update-for-desktop.html" target="_blank"><span class="award">Bug Bounty</span></a> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-21181"><span class="award">CVE-2021-21181</span></a></li>
+                        <span id="view" onclick="viewMore()">View More</span>
+                        <div id="more" style="display: none;">
+                            <li>(05/16/2021) Research internship at <a href="https://researcher.watson.ibm.com/researcher/view_group.php?id=4354" target="_blank">IBM Research</a>.</li>
+                            <li>(07/28/2020) Paper on browser form autofill accepted by <a href="https://www.sigsac.org/ccs/CCS2020/" target="_blank">CCS 2020</a>.</li>
+                            <li>(06/11/2020) Awarded from Google for finding <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1075734" target="_blank">a security bug </a> in Chrome browser. <a href="https://chromereleases.googleblog.com/2020/07/stable-channel-update-for-desktop.html" target="_blank"><span class="award">Bug Bounty</span></a> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6521"><span class="award">CVE-2020-6521</span></a></li>
+                            <li>(08/15/2018) Started PhD program at University of Illinois Chicago.</li>
+                            <li>(03/05/2018) Accepted a fully funded PhD offer from University of Illinois Chicago.</li>
+                        </div>
+                    </ul>
+                </div>
+                <h3>Publications</h3>
+                <div class="paper-container">
+                    <p><a href="https://www.usenix.org/conference/usenixsecurity22/presentation/lin-xu" target="_blank">Phish in Sheep's Clothing: Exploring the Authentication Pitfalls of Browser Fingerprinting</a><br>
+                        <span class="author">Xu Lin</span>, Panagiotis Ilia, Saumya Solanki, and Jason Polakis<br>
+                        in Proceeding of <i>USENIX Security Symposium (Security)</i>, 2022. (Acceptance rate: 17.2%=256/1492)</p>
+                        <div class="paper-graph"><img src="img/2fa.png" style="width: 100%;"></div>
+                    <p><a href="papers/autofill-ccs20.pdf">Fill in the Blanks: Empirical Analysis of the Privacy Threats of Browser Form Autofill</a><br>
+                        <span class="author">Xu Lin</span>, Panagiotis Ilia, and Jason Polakis<br>
+                        in the <i>ACM Conference on Computer and Communications Security (CCS)</i>, 2020. (Acceptance rate: 16.9%=121/715)
+                        <span id="pdf"><a href="papers/autofill-ccs20.pdf">[pdf</a>, <a href="https://www.cs.uic.edu/~browser-autofill/" target="_blank">project website]</a></span>
+                            <span class="award">CSAW Applied Research Competition Finalist, 2021</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const viewMore = function () {
+        const view = document.getElementById("view");
+        const more = document.getElementById("more");
+        if (more.style.display == "none") {
+            more.style.display = "block";
+            view.innerHTML = "View Less";
+        } else {
+            view.innerHTML = "View More";
+            more.style.display = "none";
+        }
+    }
+</script>
+
