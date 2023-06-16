@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -206,6 +207,11 @@
                      <div class="course">CS 211: Programming Practicum</div>
                      <div class="course">CS 141: Program Design II</div>
                      <div class="course">CS 111: Program Design I</div>
+                <br>
+                <p>Bug Bounty</p>
+                     <div class="course">Brave Browser: <a href="https://github.com/brave/brave-browser/issues/23432" target="_blank"> Bug </a> </div>
+                     <div class="course">Chromium Browser: <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-21181" target="_blank">CVE-2021-21181</a></div>
+                     <div class="course">Chromium Browser: <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6521" target="_blank">CVE-2020-6521</a></div>
                 </div>
             </div>
             <div class="columnn-right">
@@ -213,16 +219,19 @@
                 <h3>News</h3>
                 <div id="news-section">
                     <ul id="news-bullet">
+                        <!-- <li>(02/10/2022) Happy to annouce that I will be joining <a href="https://school.eecs.wsu.edu/" target="_blank">Washington State University</a> as an assistant professor.</li> -->
+                        <li>(12/07/2022) Paper on browser stylistic fingerprinting accepted by <a href="https://www.ieee-security.org/TC/SP2023/" target="_blank">S&P 2023</a>.</li>
+                        <li>(09/15/2022) Invited speaker for Antifraud/Web Payments </a> at <a href="https://www.w3.org/blog/wpwg/2022/10/06/tpac-recap-2022-edition/" target="_blank">W3C's 2022 Annual Conference</a>. </li>
                         <li>(08/03/2022) Awarded from Brave for finding <a href="https://github.com/brave/brave-browser/issues/23432" target="_blank">a security bug </a> in Brave browser. <a href="https://github.com/brave/brave-browser/issues/23432" target="_blank"><span class="award">Bug Bounty</span></a></li>
                         <li>(05/23/2022) Research internship at <a href="https://researcher.watson.ibm.com/researcher/view_group.php?id=4354" target="_blank">IBM Research</a>.</li>
                         <li>(02/13/2022) Paper on two-factor authentication accepted by <a href="https://www.usenix.org/conference/usenixsecurity22" target="_blank">USENIX Security 2022</a>.</li>
-                        <li>(10/13/2021) Paper on browser form autofill entered the finalist of CSAW'21 Applied Research Competition.</li>
-                        <li>(05/17/2021) Awarded from Google for finding <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1182767" target="_blank">a security bug </a> in Chrome browser. <a href="https://chromereleases.googleblog.com/2021/03/stable-channel-update-for-desktop.html" target="_blank"><span class="award">Bug Bounty</span></a> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-21181"><span class="award">CVE-2021-21181</span></a></li>
                         <span id="view" onclick="viewMore()">View More</span>
                         <div id="more" style="display: none;">
+                            <li>(10/13/2021) Paper on form autofill entered the finalist of <a href="https://www.csaw.io/_files/ugd/acbc49_637a351f1cae4222a59435b711ccf3f2.pdf">CSAW'21 Applied Research Competition</a>.</li>
+                            <li>(05/17/2021) Awarded from Google for finding <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1182767" target="_blank">a security bug </a> in Chrome browser. <a href="https://chromereleases.googleblog.com/2021/03/stable-channel-update-for-desktop.html" target="_blank"><span class="award">Bug Bounty</span></a> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-21181" target="_blank"><span class="award">CVE-2021-21181</span></a></li>
                             <li>(05/16/2021) Research internship at <a href="https://researcher.watson.ibm.com/researcher/view_group.php?id=4354" target="_blank">IBM Research</a>.</li>
                             <li>(07/28/2020) Paper on browser form autofill accepted by <a href="https://www.sigsac.org/ccs/CCS2020/" target="_blank">CCS 2020</a>.</li>
-                            <li>(06/11/2020) Awarded from Google for finding <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1075734" target="_blank">a security bug </a> in Chrome browser. <a href="https://chromereleases.googleblog.com/2020/07/stable-channel-update-for-desktop.html" target="_blank"><span class="award">Bug Bounty</span></a> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6521"><span class="award">CVE-2020-6521</span></a></li>
+                            <li>(06/11/2020) Awarded from Google for finding <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1075734" target="_blank">a security bug </a> in Chrome browser. <a href="https://chromereleases.googleblog.com/2020/07/stable-channel-update-for-desktop.html" target="_blank"><span class="award">Bug Bounty</span></a> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6521" target="_blank"><span class="award">CVE-2020-6521</span></a></li>
                             <li>(08/15/2018) Started PhD program at University of Illinois Chicago.</li>
                             <li>(03/05/2018) Accepted a fully funded PhD offer from University of Illinois Chicago.</li>
                         </div>
@@ -230,15 +239,22 @@
                 </div>
                 <h3>Publications</h3>
                 <div class="paper-container">
-                    <p><a href="https://www.usenix.org/conference/usenixsecurity22/presentation/lin-xu" target="_blank">Phish in Sheep's Clothing: Exploring the Authentication Pitfalls of Browser Fingerprinting</a><br>
+                    <p><a href="https://www.computer.org/csdl/proceedings-article/sp/2023/933600b640/1Js0Ecrxjzi" target="_blank">Fashion Faux Pas: Implicit Stylistic Fingerprints for Bypassing Browsers' Anti-Fingerprinting Defenses</a><br>
+                        <span class="author">Xu Lin</span>, Frederico Araujo, Teryl Taylor, Jiyong Jang, and Jason Polakis<br>
+                        in Proceeding of <i>IEEE Symposium on Security and Privacy (S&P)</i>, 2023. (Acceptance rate: ?)
+                        <!-- <span id="2fa_slides"><a href="papers/2FA_presentation_tpac.pdf">[slides]</a></span> -->
+                    </p>
+                    <p><a href="https://www.usenix.org/system/files/sec22-lin-xu.pdf" target="_blank">Phish in Sheep's Clothing: Exploring the Authentication Pitfalls of Browser Fingerprinting</a><br>
                         <span class="author">Xu Lin</span>, Panagiotis Ilia, Saumya Solanki, and Jason Polakis<br>
-                        in Proceeding of <i>USENIX Security Symposium (Security)</i>, 2022. (Acceptance rate: 17.2%=256/1492)</p>
+                        in Proceeding of <i>USENIX Security Symposium (Security)</i>, 2022. (Acceptance rate: 17.2%=256/1492)
+                        <span id="2fa_slides"><a href="papers/2FA_presentation_tpac.pdf">[slides]</a></span>
+                    </p>
                         <div class="paper-graph"><img src="img/2fa.png" style="width: 100%;"></div>
                     <p><a href="papers/autofill-ccs20.pdf">Fill in the Blanks: Empirical Analysis of the Privacy Threats of Browser Form Autofill</a><br>
                         <span class="author">Xu Lin</span>, Panagiotis Ilia, and Jason Polakis<br>
                         in the <i>ACM Conference on Computer and Communications Security (CCS)</i>, 2020. (Acceptance rate: 16.9%=121/715)
                         <span id="pdf"><a href="papers/autofill-ccs20.pdf">[pdf</a>, <a href="https://www.cs.uic.edu/~browser-autofill/" target="_blank">project website]</a></span>
-                            <span class="award">CSAW Applied Research Competition Finalist, 2021</span>
+                        <a href="https://www.csaw.io/_files/ugd/acbc49_637a351f1cae4222a59435b711ccf3f2.pdf"><span class="award">CSAW Applied Research Competition Finalist, 2021</span></a>
                     </p>
                 </div>
             </div>
