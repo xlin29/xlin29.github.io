@@ -11,14 +11,14 @@
             const acceptLanguageInput = document.getElementById('accept-language').value;
             const platformInput = document.getElementById('platform').value;
             const hostInput = document.getElementById('host').value;
-            const refererInput = document.getElementById('referer').value;
+            // const refererInput = document.getElementById('referer').value;
 
             // Get actual values from the browser
             const userAgent = navigator.userAgent;
             const acceptLanguage = navigator.language;
             const platform = navigator.platform;
             const host = window.location.host;
-            const referer = document.referrer;
+            // const referer = document.referrer;
 
             // Initialize an array to track incorrect fields
             let incorrectFields = [];
@@ -64,8 +64,8 @@
     <label for="host">Host:</label><br>
     <input type="text" id="host" placeholder="Enter Host"/><br><br>
 
-    <label for="referer">Referer:</label><br>
-    <input type="text" id="referer" placeholder="Enter Referer"/><br><br>
+    <!-- <label for="referer">Referer:</label><br>
+    <input type="text" id="referer" placeholder="Enter Referer"/><br><br> -->
 
     <button onclick="checkHeaders()">Submit</button>
 
