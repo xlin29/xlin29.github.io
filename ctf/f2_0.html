@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond the Surface</title>
+    <script>
+        function checkHeaders() {
+            // Get user inputs
+            const userAgentInput = document.getElementById('user-agent').value;
+            const acceptLanguageInput = document.getElementById('accept-language').value;
+            const platformInput = document.getElementById('platform').value;
+            const hostInput = document.getElementById('host').value;
+            const refererInput = document.getElementById('referer').value;
+
+            // Get actual values from the browser
+            const userAgent = navigator.userAgent;
+            const acceptLanguage = navigator.language;
+            const platform = navigator.platform;
+            const host = window.location.host;
+            const referer = document.referrer;
+
+            // Initialize an array to track incorrect fields
+            let incorrectFields = [];
+
+            // Check each field
+            if (userAgentInput !== userAgent) {
+                incorrectFields.push('User-Agent');
+            }
+            if (acceptLanguageInput !== acceptLanguage) {
+                incorrectFields.push('Accept-Language');
+            }
+            if (platformInput !== platform) {
+                incorrectFields.push('Platform');
+            }
+            if (hostInput !== host) {
+                incorrectFields.push('Host');
+            }
+            if (refererInput !== referer) {
+                incorrectFields.push('Referer');
+            }
+
+            // Display results
+            if (incorrectFields.length === 0) {
+                document.getElementById('flag-image').style.display = 'block';
+            } else {
+                alert(`Incorrect headers: ${incorrectFields.join(', ')}`);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Enter the correct headers to reveal the flag:</h1>
+
+    <label for="user-agent">User-Agent:</label><br>
+    <input type="text" id="user-agent" placeholder="Enter User-Agent"/><br><br>
+
+    <label for="accept-language">Accept-Language:</label><br>
+    <input type="text" id="accept-language" placeholder="Enter Accept-Language"/><br><br>
+
+    <label for="platform">Platform:</label><br>
+    <input type="text" id="platform" placeholder="Enter Platform"/><br><br>
+
+    <label for="host">Host:</label><br>
+    <input type="text" id="host" placeholder="Enter Host"/><br><br>
+
+    <label for="referer">Referer:</label><br>
+    <input type="text" id="referer" placeholder="Enter Referer"/><br><br>
+
+    <button onclick="checkHeaders()">Submit</button>
+
+    <img id="image" src="img/reveal.png" alt="Flag" style="display: none;"/>
+</body>
+</html>
