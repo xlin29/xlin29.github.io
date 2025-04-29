@@ -2,4 +2,4 @@ User-agent: *
 Allow: /public/
 
 User-agent: *
-Disallow: /49375789.html
+Disallow: /admin/
