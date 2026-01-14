@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<body>
+<h2>Top-level = Site B</h2>
+<p>Embedding Site C as third-party iframe.</p>
+
+<iframe id="f" width="100%" height="360"></iframe>
+
+<button onclick="setOp('write')">Write under B</button>
+<button onclick="setOp('read')">Read under B</button>
+
+<h3>Message from iframe:</h3>
+<pre id="msg">(waiting…)</pre>
+
+<script>
+const C = "https://sitec-rq9n.onrender.com";
+
+function setOp(op) {
+  document.getElementById("f").src = C + "?op=" + op + "&t=" + Date.now();
+}
+
+window.addEventListener("message", (e) => {
+  if (e.data?.type === "c_partition_result") {
+    document.getElementById("msg").textContent = JSON.stringify(e.data.result, null, 2);
+  }
+});
+
+setOp("read");
+</script>
+</body>
+</html>
